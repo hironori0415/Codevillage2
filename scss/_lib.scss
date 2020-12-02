@@ -1,0 +1,79 @@
+/////////////////////////
+//        変数        //
+/////////////////////////
+$smoke:#707070;
+$color1: #A193861F;
+$color2: #A1938689;
+$color3: #707070;
+
+
+
+
+/////////////////////////
+//        mixin        //
+/////////////////////////
+@mixin pc {
+    @media screen and (min-width: 960px){
+        @content;
+    }
+    
+}
+
+@mixin tab {
+    @media screen and (max-width: 959px){
+        @content;
+    }
+    
+}
+
+
+@mixin sp {
+    @media screen and (max-width: 750px){
+        @content;
+    }
+}
+    
+
+
+
+
+
+
+/////////////////////////
+//        共通        //
+/////////////////////////
+
+html {
+    font-size: 62.5%; // 10px
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 12px;
+    line-height: 1.6;
+    letter-spacing: 0.1em;
+    max-width: 2560px;
+    min-width: 320px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #707070;
+    &:after {
+        display: inline-block;
+        content: "";
+        border-bottom: 1px solid #707070;
+        width: 9.9rem;
+        margin: 0 0 0.7rem 2.2rem;
+        height: 0.9rem;
+    }
+}
+
+.inner {
+    width: 100% - 8.3% * 2;//9.7%は両側の余白
+    margin: 0 auto;
+    @include sp {
+        padding: 50px 0;
+        width: 90%; 
+    }
+}

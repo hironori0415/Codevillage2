@@ -1,0 +1,79 @@
+.first-v {
+    // background-image: url(../img/Blond\ woman\ with\ long\ curly\ beautiful\ hair.png);
+    // margin-left: auto;
+    // background-size: cover;
+    // width: 100%;
+    // height: 100vh;
+    background-image: url(../img/Blond\ woman\ with\ long\ curly\ beautiful\ hair.png);
+    margin-left: auto;
+    background-size: cover;
+    // width: calc( 100vw - 53vw );
+    width: 53%;
+    height: 80rem;
+    @include sp {
+        // @include tab {
+            width: 100%;
+            // width: 37.5rem;
+            // height: 100vh;
+            height: 59.7rem;
+            position: initial;
+            margin-left: initial;
+            flex-direction: column-reverse;
+            text-shadow: 0 3px 16px #000000;
+        }
+        
+    }
+    .first-v_wrap {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        width: 39.0rem;
+        height: 21.4rem;
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        color: #000000;
+        @include sp {
+            flex-direction: column-reverse;
+            color: #FFFFFF;
+            height: 8em;
+            width: 32rem;
+            position: absolute;
+            top: 58%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .first-v_catch {
+            font-family: Hiragino Mincho Pro;
+            font-size: 3.8rem;
+            text-align: center;
+            width: 32.6rem;
+            height: 3.8rem;
+            min-width: 19.5rem;
+            @include sp {
+                font-size: 2.3rem;
+                width: 32rem;
+            }
+    }
+    .first-v_catch2 {
+            font-family: Zapfino,Regular;
+            font-size: 3.8rem;
+            display: inline-block;
+            width: 39rem;
+            @include sp {
+                width: 32rem;
+            }
+            & p {
+                text-align: left;
+                line-height: 3.8rem;
+                height: auto;
+                @include sp {
+                    text-align: center;
+                    font-size: 2.8rem;
+                }
+            }
+        }
+}

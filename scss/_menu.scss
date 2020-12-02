@@ -1,0 +1,82 @@
+.title{
+        padding-top: 19%;
+}
+
+.menu-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 1rem;
+    
+    
+}
+
+.menu-item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 27%;
+    // margin-right: 12.7rem;
+    @include tab {
+        width: 100%;
+        // margin-right: initial;
+        margin-top: 5rem;
+    }
+    &__img {
+        width: 100%;
+        height: 50%;
+        @include tab {
+            height: 80%;
+
+        }
+        @include sp {
+            height: 65%;
+        }
+        & img {
+            width: 100%;
+            height: 100%;
+            @include tab {
+                width: 100%;
+            }
+        }
+    }
+    
+// //     height: 55.5rem;
+}
+
+.menu__content {
+    width: 93%;
+    font-family: Roboto Mono for Powerline;
+    // padding: 37px 10px 13px 11px;
+    &__title {
+        width: 100%;
+        font-size: 3.0rem;
+        text-align: center;
+        margin-top: 3.7rem;
+        @include tab {
+            text-align: left;
+            margin-top: 3rem;
+        }
+    }
+    &__intro {
+        width: 100%;
+        font-size: 1.6rem;
+        margin-top: 3.4rem;
+        letter-spacing: 0.16em;
+        @include tab {
+            margin-top: 3rem;
+        }
+    }
+    &__money {
+        width: 100%;
+        font-size: 1.6rem;
+        text-align: right;
+        margin-top: 1em;
+        @include tab {
+            margin-top: 3rem;
+    }
+}
+
+}

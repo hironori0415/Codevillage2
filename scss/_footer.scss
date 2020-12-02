@@ -1,0 +1,76 @@
+.footer{
+    width: 100vw;
+    height: 34.2rem;
+    @include sp {
+        height: 26rem;
+    }
+}
+
+.footer-border {
+    display: inline-block;
+    content: "";
+    border-bottom: 1px solid #70707036;
+    width: 80%;
+    margin: 16.45rem  10.65rem 0 12.75rem;
+    @include tab {
+        // width: 33rem;
+        margin: 6.35rem 3rem 6.05rem 3rem;
+    }
+}
+
+.footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8.35rem 0 6.2rem 0;
+    @include tab {
+        flex-direction: column-reverse;
+        margin: initial;
+        margin-bottom: 1.9rem;
+    }
+}
+.footer-wrap__intro {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    @include tab {
+        width: 95%;
+        justify-content: space-between;
+        margin:6.2rem 7rem  0 7rem;
+    }
+}
+.footer-title {
+    font-size: 3.2rem;
+    color: #7070704D;
+    margin:0 1.7rem 0 10.3rem;
+    letter-spacing: 0.32rem;
+    @include tab {
+        margin:initial;
+        font-size: 1.8rem;
+        margin-right: 5.2rem;
+    }
+    }
+.footer-logo-item {
+        font-size: 2rem;
+        color: initial;
+        margin: 0.8rem 0 1rem 0.9rem;
+        @include tab {
+            margin: initial;
+            font-size: 1.8rem;
+        }
+}
+
+.footer-text {
+    font-family: Roboto Mono for Powerline;
+    font-size: 1.8rem;
+    color: #707070;
+    letter-spacing: 0.18rem;
+    padding:1.0rem 4.1rem 0.9rem 4.1rem;
+    border: 1px solid #707070;
+    margin-right: 11.3rem;
+    @include tab {
+        padding: 0.4rem 4.4rem 0.4rem 4.4rem;
+        margin-right: initial;
+    }
+}
