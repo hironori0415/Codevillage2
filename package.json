@@ -1,0 +1,27 @@
+{
+  "name": "oohara11-pre2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "sass": "^1.29.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hironori0415/codevillage2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hironori0415/codevillage2/issues"
+  },
+  "homepage": "https://github.com/hironori0415/codevillage2#readme",
+  "description": ""
+}

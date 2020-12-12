@@ -95,8 +95,8 @@
 .concept-wrap {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 6.9rem auto 6.4rem;
+    // align-items: center;
+    margin: 6.3rem auto 6.4rem;
     color: #FFFFFF;
     @include tab {
         display: flex;
@@ -114,6 +114,7 @@
     font-family: Hiragino Mincho Pro;
     font-size: 4rem;
     width: 34%;
+    padding-top: 1.4%;
     // width: 44.5rem;
     // height: 4.2rem;
         @include tab {
