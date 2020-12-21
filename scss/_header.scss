@@ -166,7 +166,7 @@ nav {
   }
 }
 
-// //スライドメニュー
+//スライドメニュー
 .hamburger {
   display: none;
   @include tab {
@@ -189,9 +189,9 @@ nav {
       height: 100vh;
     }
     // &__list {
-    // //   @include rem(16);
-    // //   list-style: none;
-    // //   text-align: center;
+    //   @include rem(16);
+    //   list-style: none;
+    //   text-align: center;
     // }
     &__list + &__list {
       padding-top: 50px;
@@ -202,7 +202,56 @@ nav {
     }
   }
 }
-// //activeクラスをつけたら、スライドイン
+//activeクラスをつけたら、スライドイン
 .hamburger.active {
   transform: translateX(0);
+}
+
+//メニューホバー
+.nav__list a {
+  position: relative;
+}
+
+.nav__list-text:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  display: block;
+  background: #5bc8ac;
+  z-index: -1;
+  transition: .2s;
+}
+
+.nav__list-text:hover{
+  color: #fff;
+}
+
+.nav__list-text:hover:before{
+  width: 100%;
+}
+
+//スライドイン内ホバー
+.hamburger__list a {
+  position: relative;
+}
+
+.hamburger__link:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  display: block;
+  background: #5bc8ac;
+  z-index: -1;
+  transition: .2s;
+}
+.hamburger__link:hover{
+  color: #fff;
+}
+
+.hamburger__link:hover:before{
+  width: 100%;
 }

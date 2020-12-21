@@ -50,7 +50,7 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -342,8 +342,56 @@ nav ul {
   transform: translateX(0);
 }
 
+.nav__list a {
+  position: relative;
+}
+
+.nav__list-text:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  display: block;
+  background: #5bc8ac;
+  z-index: -1;
+  transition: 0.2s;
+}
+
+.nav__list-text:hover {
+  color: #fff;
+}
+
+.nav__list-text:hover:before {
+  width: 100%;
+}
+
+.hamburger__list a {
+  position: relative;
+}
+
+.hamburger__link:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  display: block;
+  background: #5bc8ac;
+  z-index: -1;
+  transition: 0.2s;
+}
+
+.hamburger__link:hover {
+  color: #fff;
+}
+
+.hamburger__link:hover:before {
+  width: 100%;
+}
+
 .first-v {
-  background-image: url(../img/Blond\ woman\ with\ long\ curly\ beautiful\ hair.png);
+  background-image: url("../img/Blond woman with long curly beautiful hair.png");
   margin-left: auto;
   background-size: cover;
   width: 53%;
@@ -365,7 +413,7 @@ nav ul {
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  width: 39.0rem;
+  width: 39rem;
   height: 21.4rem;
   position: absolute;
   top: 50%;
@@ -400,7 +448,7 @@ nav ul {
   }
 }
 .first-v_wrap .first-v_catch2 {
-  font-family: Zapfino,Regular;
+  font-family: Zapfino, Regular;
   font-size: 3.8rem;
   display: inline-block;
   width: 39rem;
@@ -642,7 +690,7 @@ nav ul {
 }
 .menu__content__title {
   width: 100%;
-  font-size: 3.0rem;
+  font-size: 3rem;
   text-align: center;
   margin-top: 3.7rem;
 }
@@ -742,7 +790,6 @@ nav ul {
   letter-spacing: 0.16em;
   line-height: 2.3;
 }
-
 .access-wrap {
   width: 100%;
   height: 52%;
@@ -791,7 +838,7 @@ nav ul {
   content: "";
   border-bottom: 1px solid #70707036;
   width: 80%;
-  margin: 16.45rem  10.65rem 0 12.75rem;
+  margin: 16.45rem 10.65rem 0 12.75rem;
 }
 @media screen and (max-width: 959px) {
   .footer-border {
@@ -823,7 +870,7 @@ nav ul {
   .footer-wrap__intro {
     width: 95%;
     justify-content: space-between;
-    margin: 6.2rem 7rem  1.9rem 7rem;
+    margin: 6.2rem 7rem 1.9rem 7rem;
   }
 }
 
@@ -858,7 +905,7 @@ nav ul {
   font-size: 1.8rem;
   color: #707070;
   letter-spacing: 0.18rem;
-  padding: 1.0rem 4.1rem 0.9rem 4.1rem;
+  padding: 1rem 4.1rem 0.9rem 4.1rem;
   border: 1px solid #707070;
   margin-right: 11.3rem;
 }
