@@ -77,13 +77,24 @@ nav {
 //------------ここからhamburgerメニュー----------------->
 //スマホのナビゲーション(ハンバーガーメニュー)
 //ハンバーガーの部分
+button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        padding: 0;
+        appearance: none;
+}
 .ham-btn {
   display: none;
   @include tab{
     display: block;
     position: relative;
-    width: 25px;
-    height: 16px;
+    align-items: center;
+    width: 30px;
+    height: 20px;
+    background-color: initial;
+    border-color: initial;
     margin-right: 4vw;
     z-index: 20;
   }
@@ -92,7 +103,6 @@ nav {
   display: block;
   width: 100%;
   height: 2px;
-//   background-color: $color-white;
   position: absolute;
   transition: transform 0.5s, opacity 0.5s;
 }
@@ -106,6 +116,7 @@ nav {
     margin: auto;
   }
   &.-bottom {
+    margin: 0 5px 0 0 ;
     bottom: 0;
   }
 }
@@ -134,9 +145,8 @@ nav {
         width: 16px;
         height: 14px;
         display: flex;
-        justify-content: right;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
         margin-right: 20px;
         span {
             display: inline-block;
@@ -144,7 +154,7 @@ nav {
             height: 2px;
             background-color: #3B4043;
             &:nth-child(3) {
-                width: 70%;
+              width: 70%;
             }
         }
     }
@@ -152,7 +162,7 @@ nav {
 .ham-btn.active {
   .ham-btn__parts {
     &.-top {
-      transform: translateY(8px) rotate(-45deg);
+      transform: translateY(9px) rotate(-45deg);
     }
     //2つ目のspanを消す
     &.-middle {
@@ -160,7 +170,7 @@ nav {
     }
     //3番目のspanを45度に
     &.-bottom {
-      transform: translateY(-4px) rotate(45deg);
+      transform: translateX(1.5px) translateY(-3px) rotate(45deg);
       width: 100%;
     }
   }
@@ -188,17 +198,11 @@ nav {
       width: 100vw;
       height: 100vh;
     }
-    // &__list {
-    //   @include rem(16);
-    //   list-style: none;
-    //   text-align: center;
-    // }
     &__list + &__list {
       padding-top: 50px;
     }
     &__link {
       text-decoration: none;
-    //   color: $color-white;
     }
   }
 }
