@@ -361,11 +361,13 @@ button {
 .nav__list-text:before {
   content: "";
   position: absolute;
-  top: 0;
-  bottom: 0;
+  top: -13px;
+  bottom: -13px;
+  left: -10px;
   width: 0;
   display: block;
   background: #5bc8ac;
+  border-radius: 20px;
   z-index: -1;
   transition: 0.2s;
 }
@@ -375,7 +377,8 @@ button {
 }
 
 .nav__list-text:hover:before {
-  width: 100%;
+  width: 120%;
+  padding: 20px;
 }
 
 .hamburger__list a {
@@ -385,11 +388,13 @@ button {
 .hamburger__link:before {
   content: "";
   position: absolute;
-  top: 0;
-  bottom: 0;
+  top: -13px;
+  bottom: -13px;
+  left: -10px;
   width: 0;
   display: block;
   background: #5bc8ac;
+  border-radius: 20px;
   z-index: -1;
   transition: 0.2s;
 }
@@ -399,7 +404,7 @@ button {
 }
 
 .hamburger__link:hover:before {
-  width: 100%;
+  width: 120%;
 }
 
 .first-v {
